@@ -7,10 +7,10 @@ function sumar() {
     console.log(2 + 2);
 }
 
-sumar2();
-const sumar2 = function() {
-    console.log(3 + 3);
-}
+// sumar2();
+// const sumar2 = function() {
+//     console.log(3 + 3);
+// }
 
 
 // Eso pasa porque JavaScript se ejecuta digamos en 2 vueltas - Eso se le conoce como Hoisting , la primer vuelta registra todas las funciones y determina las variables, esta etapa se le llama de creación, 
@@ -25,9 +25,9 @@ const sumar2 = function() {
 
 // básicamente tu código se ejecuta asi:
 
-const sumar2;
+
 sumar2(); // a estas alturas es undefined...
-sumar2 = function() {
+const sumar2 = function() {
     console.log(3 + 3); // pero como ya habiamos llamado la función, se queda como undefined
 }
 

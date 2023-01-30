@@ -12,7 +12,7 @@ function iniciarApp() {
 
 function segundaFuncion() {
     console.log('Desde la segunda función...')
-    usuarioAutenticado('Pablo');
+    usuarioAutenticado('Isai');
 }
 
 function usuarioAutenticado(usuario) {
