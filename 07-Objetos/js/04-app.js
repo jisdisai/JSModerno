@@ -5,18 +5,13 @@ const producto = {
     nombre: "Monitor 20 pulgadas",
     precio: 30,
     disponible: true,
-    informacion : {
-        peso: '1kg',
-        medida: '1m'
-    }
+   
 }
 
 
+//const nombre = producto.nombre;
+//console.log(nombre);
 
-console.log(producto); // Puedes ver que tenemos un objeto dentro de un objeto.
-
-// De nueva cuenta para acceder a un objeto, se utiliza la sintaxis de punto
-
-console.log(producto.informacion);
-console.log(producto.informacion.peso);
-console.log(producto.informacion.medida);
+//Destructuring
+const{nombre, precio, disponible} = producto;
+console.log(nombre, precio, disponible);

@@ -8,8 +8,6 @@ const producto = {
     disponible: true
 }
 
-console.log(producto);
-
 // Para ello utilizaremos un Object Method o Métodos de objetos.
 
 // Seguido me dicen, porque les dices Métodos, eso suena como algo de programación orientada a objetos
@@ -32,6 +30,8 @@ Object.freeze( producto ); // Freeze toma como argumento el objeto
 
 // Finalmente si quieres revisar si un objeto esta congelado puedes usar
 
-console.log( Object.isFrozen(producto) );
 
 console.log(producto);
+
+
+console.log( Object.isFrozen(producto) );
