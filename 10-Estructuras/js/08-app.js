@@ -6,7 +6,7 @@
 
 const autenticado = true;
 
-if(autenticado === true) {
+if(autenticado) {
     console.log('El Usuario esta autenticado')
 }
 
@@ -17,12 +17,22 @@ if(autenticado === true) {
 
 const puntaje = 500;
 
-if(puntaje > 300) {
-    console.log('Buen puntaje... felicidades');
-} else if(puntaje > 400) {
-    console.log('Excelente esfuerzo')
-} else {
-    console.log('No sabria decirte, pero buen esfuerzo...')
+function revisarPuntaje() {
+
+    if(puntaje > 400) {
+        console.log('Excelente');
+        return;
+    }
+        
+   if(puntaje > 300) {
+        console.log('Buen Puntaje ... felicidades');
+        return;
+    } 
+        
 }
+
+revisarPuntaje(); 
+
+
 
 // puedes ver que ambas condiciones se cumplen, la de 300 y 400, muchas personas creen que se van a ejecutar ambas porque ambas se cumplen pero el if va a ejecutar la que más pronto cumpla su condición, también recuerda que el orden puede ser importante, lo más seguro es que quieras cambiar el orden del 300 y 400

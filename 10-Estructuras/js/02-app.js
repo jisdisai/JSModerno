@@ -1,6 +1,6 @@
 // Veamos otras comparaciones
 
-
+const puntaje = 1001;
 // No es igual
 if(puntaje != 1000) {
     console.log("Si! es diferente!");
@@ -20,3 +20,9 @@ if(puntaje !== 1000) {
 } else {
     console.log("No no es igual");
 }
+
+
+// != Diferente, No estricto
+// == Igual a concido como operador no estricto 
+// === operador Estricto
+// !== operador estricto para comparar 
